@@ -35,7 +35,7 @@ while (( "$#" )); do
       OPTIONS[cmd]=$2
       shift 2
       ;;
-    --) # end argument parsing
+    --)
       shift
       break
       ;;
