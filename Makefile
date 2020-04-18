@@ -1,7 +1,7 @@
 .PHONY: help install dependencies update clean
 
 help:
-	cat Makefile
+	cat $(lastword $(MAKEFILE_LIST))
 
 install: \
 	dependencies
