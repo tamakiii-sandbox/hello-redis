@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  crawler:
+    build: .
+    working_dir: /app
+    volumes:
+      - .:/app
+
+  redis:
+    image: redis:5.0.8
